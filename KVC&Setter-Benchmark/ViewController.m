@@ -25,11 +25,11 @@ static NSInteger count = 100000;
     [self benchmark4];
     [self benchmark5];
     
-    [self benchmark11];
-    [self benchmark22];
-    [self benchmark33];
-    [self benchmark44];
-    [self benchmark55];
+    [self benchmark6];
+    [self benchmark7];
+    [self benchmark8];
+    [self benchmark9];
+    [self benchmark10];
 }
 
 - (void)benchmark1
@@ -102,7 +102,7 @@ static NSInteger count = 100000;
     NSLog(@"m.stringValue = @\"hello\":                     %f", endTime - startTime);
 }
 
-- (void)benchmark11
+- (void)benchmark6
 {
     CFTimeInterval startTime = CACurrentMediaTime();
     
@@ -117,7 +117,7 @@ static NSInteger count = 100000;
     NSLog(@"[m setValue:num forKey:@\"_integerValue\"]:       %f", endTime - startTime);
 }
 
-- (void)benchmark22
+- (void)benchmark7
 {
     CFTimeInterval startTime = CACurrentMediaTime();
     
@@ -132,7 +132,7 @@ static NSInteger count = 100000;
     NSLog(@"[m setValue:num forKey:@\"integerValue\"]:        %f", endTime - startTime);
 }
 
-- (void)benchmark33
+- (void)benchmark8
 {
     CFTimeInterval startTime = CACurrentMediaTime();
     
@@ -146,7 +146,7 @@ static NSInteger count = 100000;
     NSLog(@"[m setIntegerValue:123]:                      %f", endTime - startTime);
 }
 
-- (void)benchmark44
+- (void)benchmark9
 {
     CFTimeInterval startTime = CACurrentMediaTime();
     
@@ -160,7 +160,7 @@ static NSInteger count = 100000;
     NSLog(@"m->_integerValue = 123:                       %f", endTime - startTime);
 }
 
-- (void)benchmark55
+- (void)benchmark10
 {
     CFTimeInterval startTime = CACurrentMediaTime();
     
