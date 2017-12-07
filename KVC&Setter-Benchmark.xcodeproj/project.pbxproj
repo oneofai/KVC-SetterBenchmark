@@ -13,6 +13,7 @@
 		598658191FD9686C00C0FDB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 598658181FD9686C00C0FDB7 /* Assets.xcassets */; };
 		5986581C1FD9686C00C0FDB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5986581A1FD9686C00C0FDB7 /* LaunchScreen.storyboard */; };
 		5986581F1FD9686C00C0FDB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5986581E1FD9686C00C0FDB7 /* main.m */; };
+		598658271FD968FC00C0FDB7 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 598658261FD968FC00C0FDB7 /* TestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5986581B1FD9686C00C0FDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5986581D1FD9686C00C0FDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5986581E1FD9686C00C0FDB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		598658251FD968FC00C0FDB7 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		598658261FD968FC00C0FDB7 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				598658101FD9686C00C0FDB7 /* AppDelegate.m */,
 				598658121FD9686C00C0FDB7 /* ViewController.h */,
 				598658131FD9686C00C0FDB7 /* ViewController.m */,
+				598658251FD968FC00C0FDB7 /* TestModel.h */,
+				598658261FD968FC00C0FDB7 /* TestModel.m */,
 				598658151FD9686C00C0FDB7 /* Main.storyboard */,
 				598658181FD9686C00C0FDB7 /* Assets.xcassets */,
 				5986581A1FD9686C00C0FDB7 /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 				598658141FD9686C00C0FDB7 /* ViewController.m in Sources */,
 				5986581F1FD9686C00C0FDB7 /* main.m in Sources */,
 				598658111FD9686C00C0FDB7 /* AppDelegate.m in Sources */,
+				598658271FD968FC00C0FDB7 /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,10 +287,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZP5WC8TEU;
 				INFOPLIST_FILE = "KVC&Setter-Benchmark/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oneofai.KVC-Setter-Benchmark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,10 +302,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZP5WC8TEU;
 				INFOPLIST_FILE = "KVC&Setter-Benchmark/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oneofai.KVC-Setter-Benchmark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
