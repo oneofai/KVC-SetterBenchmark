@@ -14,7 +14,7 @@
     NSInteger _integerValue;
 }
 
-@property (nonatomic, strong) NSString *stringValue;
+@property (nonatomic, copy) NSString *stringValue;
 @property (nonatomic, assign) NSInteger integerValue;
 
 @end
